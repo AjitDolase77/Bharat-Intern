@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Registration Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<style>
+		body {
+			margin-top: 50px;
+			background: #010227;
+		}
+		.main {
+			padding: 20px;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			box-shadow: 1px 1px 120px 3px #a20000;
+		}
+		.main h1 {
+			font-size: 40px;
+			text-align: center;
+			margin-bottom: 25px;
+			color: red;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+		input {
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			width: 100%;
+			font-size: 20px;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: none;
+			border-bottom: 2px solid #767474;
+		}
+		input[type=submit] {
+			height: 100%;
+			width: 100%;
+			border-radius: 5px;
+			border: none;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			background: #010227;
+		}
+		input[type=submit] {
+			height: 45px;
+			margin: 35px 0
+		}
+		input[type=submit]:hover {
+			/* transform: scale(0.99); */
+			background: linear-gradient(-135deg, #399129, #399129);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6 main">
+				<form action="http://localhost:3000/sign_up" method="post">
+					<h1> Registration form </h1>
+					<input class="box" type="text" name="name" id="name" placeholder="Enter Your Name" required /><br>
+					<input class="box" type="email" name="email" id="email" placeholder="Enter Your E-Mail " required /><br>
+					<input class="box" type="password" name="password" id="password" placeholder="Enter Your Password "
+						required /><br>
+					<input class="box" type="text" name="phone" id="phone" placeholder="Enter Your Phone Number " required /><br>
+					<br>
+					<input type="submit" id="submitDetails" name="submitDetails" value="Submit" class="button" /><br>
+				</form>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
